@@ -29,4 +29,12 @@ export class HousingService {
       );
     }
   }
+  submitApplication(firstName: string, lastName: string, email: string) {
+    const payload = {
+      firstName,
+      lastName,
+      email,
+    };
+    console.log(payload);
+  }
 }
